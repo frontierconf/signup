@@ -101,19 +101,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  height: 100%;
+}
+
+@media screen and (min-height: 800px) {
+  body {
+    height: 100%;
+  }
+}
+
+html {
+  background: #00adef url('/img/stripes-down.png') top left repeat-x;
+}
 
 body {
-  background-color: #00adef;
+  padding: 15px 0 50px;
+  background: url('/img/stripes-up.png') bottom left repeat-x;
 }
 
 .date, button {
   font-family: 'Ubuntu Condensed', 'Arial Narrow', sans-serif;
 }
 
-
 .logo {
-  max-height: 700px;
-  margin: -50px -150px;
+  display: block;
+  width: 75%;
+  max-width: 300px;
+  margin: 0 auto 7vw;
 }
 
 .logo path {
@@ -128,21 +143,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000;
-  font-size: 7vw;
+  font-size: 14vw;
 
   background-color: #fff;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 400px) {
   .date {
     font-size: 3em;
   }
 }
 
 form {
-  width: 40%;
+  width: 80%;
   min-width: 250px;
-  margin: 75px auto;
+  max-width: 400px;
+  margin: 7vw auto;
 }
 
 label {
@@ -159,7 +175,7 @@ input {
   border: 0;
   border-radius: 10px;
 
-  font-size: 25px;
+  font-size: 20px;
 }
 
 button {
@@ -171,13 +187,27 @@ button {
   border: 0;
   border-radius: 10px;
 
-  font-size: 40px;
+  font-size: 25px;
   text-transform: uppercase;
   color: #fff;
 
   background: #000;
 }
 
+@media screen and (min-width: 600px) {
+  .logo {
+    margin-bottom: 5vw;
+  }
+  form {
+    margin: 5vw auto;
+  }
+  input {
+    font-size: 25px;
+  }
+  button {
+    font-size: 40px;
+  }
+}
 
 
 
