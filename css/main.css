@@ -116,11 +116,16 @@ html {
 }
 
 body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   padding: 15px 0 50px;
   background: url('/img/stripes-up.png') bottom left repeat-x;
 }
 
-.date, button {
+input {
+  font-family: inherit;
+}
+
+.location, .date, button {
   font-family: 'Ubuntu Condensed', 'Arial Narrow', sans-serif;
 }
 
@@ -128,7 +133,7 @@ body {
   display: block;
   width: 75%;
   max-width: 300px;
-  margin: 0 auto 7vw;
+  margin: 0 auto;
 }
 
 .logo path {
@@ -139,18 +144,41 @@ body {
   fill: #000;
 }
 
+.location {
+  margin-bottom:  3vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 9vw;
+}
+
 .date {
   text-align: center;
   text-transform: uppercase;
   color: #000;
-  font-size: 14vw;
+  font-size: 10vw;
 
   background-color: #fff;
 }
 
+.strap {
+  margin: 6vw auto 10vw;
+  font-size: 5vw;
+  font-weight: 200;
+  text-align: center;
+  color: #000;
+}
+
 @media screen and (min-width: 400px) {
+  .location {
+    font-size: 2em;
+  }
   .date {
     font-size: 3em;
+  }
+  .strap {
+    font-size: 1.5em;
+    margin: 1.5em auto -1vw;
   }
 }
 
@@ -195,8 +223,8 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-  .logo {
-    margin-bottom: 5vw;
+  .location {
+    margin-top: 1vw;
   }
   form {
     margin: 5vw auto;
